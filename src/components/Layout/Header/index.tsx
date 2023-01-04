@@ -5,7 +5,7 @@ import travelLogo from "public/assets/travelo-logo-header.png";
 import Container from "components/Container";
 import Search from "./Search";
 import Nav from "./Nav";
-import Button from "components/Button";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -20,13 +20,14 @@ const Header = () => {
               height="48"
               width="182"
             />
-
             <Search />
           </div>
 
           <div className="flex gap-5">
             <Nav />
-            <Button className="w-[190px]">Masuk</Button>
+            <Link href="/login">
+              <a className="bg-blue-100 text-white p-3 w-[190px] h-[45px] text-heading-4 font-label font-bold rounded-md flex justify-center items-center">Masuk</a>
+            </Link>
           </div>
         </div>
       </Container>

@@ -32,7 +32,6 @@ const Login = () => {
           >
             <Input
               register={register}
-              errors={errors}
               required={{ value: true, message: "Email harus diisi." }}
               pattern={{
                 value: REG_EXP.email,
@@ -46,7 +45,6 @@ const Login = () => {
             />
             <Input
               register={register}
-              errors={errors}
               required={{ value: true, message: "Password harus diisi." }}
               label="Kata sandi"
               type="password"
